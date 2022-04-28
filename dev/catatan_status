@@ -1,0 +1,25 @@
+kode "task category"
+marketing_progress  =   Marketing progress
+mrk                 =   Marketing request
+
+#.status PO
+    1. requestor
+    2. warehouse
+    3. approval
+    4. final
+
+#.marketing progress
+    1. mp_prospek
+    2. mp_pre_survey
+    3. mp_survey
+    4. mp_trial
+    5. mp_billing
+
+#.marketing request
+    1. general
+    2. pre_survey
+
+
+*123*7*1*1*97*1*1#
+
+6287848477429

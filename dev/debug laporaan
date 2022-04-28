@@ -1,0 +1,9 @@
+truncate gmd_task_item_out;
+truncate gmd_task_item_in;
+truncate gmd_task_report_presurvey;
+
+select distinct item_status from gmd_item_detail;
+
+update gmd_item_detail set item_status='available' where item_status='approved_out';
+update gmd_item_detail set item_status='available' where item_status='approved_in';
+update gmd_item_detail set item_status='available' where item_status='request_in';

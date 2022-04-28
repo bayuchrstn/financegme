@@ -1,0 +1,30 @@
+
+1.include task item js
+
+2.js pada funtion input
+
+3.getajax('<?php echo base_url(); ?>xhr/task_item/index/task_item_in/0/insert/item_in_insert/item_in', 'item_in_insert');
+
+4.incluce modal --------------------- index_ext_view
+
+5.edit judul utama di /task_item/index
+
+6.edit "column_data" di Model_task_item
+
+7.edit get_current di Model_task_item
+
+8.edit get_cart di Model_task_item
+
+9.tambah file form insert di task_item/insert/{nama file.php}
+
+10.tambah file form update di task_item/update/{nama file.php}
+
+11.tambah file form update_cart di task_item/update_cart/{nama file.php}
+
+12.update function tion properties pada Model_task_item
+
+13.semua action ada di Model_task_item namanya sesuai dengan "path terakhir"
+
+14.include js pada funtion update
+
+15.getajax('<?php echo base_url(); ?>xhr/task_item/index/task_item_in/0/update/item_in_update/item_in', 'item_in_update');

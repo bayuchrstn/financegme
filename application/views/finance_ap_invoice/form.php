@@ -1,0 +1,42 @@
+<?php
+$data = array();
+$data['prefix'] = 'insert';
+$options = array();
+$options['component'] = 'component/modal/modal_form';
+$options['modal_id'] = 'modal_finance_ap_invoice';
+$options['modal_size'] = 'modal-full';
+//$options['modal_icon'] = $this->theme->icon('finance_ap_invoice');
+$options['modal_title'] = '<i class="material-icons">&#xE865;</i> Form <span id="title_modal_flexible"></span>';
+$options['modal_footer'] = 'no';
+$options['form_id'] = 'formulir_modal';
+$options['form_action'] = '';
+$options['main_content'] = $this->load->view('finance_ap_invoice/form_grid', $data, TRUE);
+echo $this->ui->load_component($options);
+
+$data = array();
+$data['prefix'] = 'insert';
+$options = array();
+$options['component'] = 'component/modal/modal_form';
+$options['modal_id'] = 'modal_finance_ap_invoice_manual';
+$options['modal_size'] = 'modal-full';
+//$options['modal_icon'] = $this->theme->icon('finance_ap_invoice');
+$options['modal_title'] = '<i class="material-icons">&#xE865;</i> Form <span id="title_modal_flexible_manual"></span>';
+$options['modal_footer'] = 'no';
+$options['form_id'] = 'formulir_modal_manual';
+$options['form_action'] = '';
+$options['main_content'] = $this->load->view('finance_ap_invoice/form_grid_manual', $data, TRUE);
+echo $this->ui->load_component($options);
+
+$data = array();
+$data['prefix'] = 'insert';
+$options = array();
+$options['component'] = 'component/modal/modal_form';
+$options['modal_id'] = 'modal_finance_ap_invoice_view';
+$options['modal_size'] = 'modal-full';
+//$options['modal_icon'] = $this->theme->icon('finance_ap_invoice');
+$options['modal_title'] = '<i class="material-icons">&#xE865;</i> View';
+$options['modal_footer'] = 'no';
+$options['form_id'] = 'formulir_modal_view';
+$options['form_action'] = '';
+$options['main_content'] = $this->load->view('finance_ap_invoice/form_grid_view', $data, TRUE);
+echo $this->ui->load_component($options);

@@ -1,0 +1,56 @@
+FO
+survey
+-------
+Distribusi                      fo_distribusi
+Jarak ODP – Server              fo_jarak_odp_server
+Start Point                     fo_start_point
+End Point                       fo_end_point
+Jenis Kabel                     fo_jenis_kabel        ********
+Status Kabel                    fo_status_kabel
+Tiang 7 Meter                   fo_tiang_7_meter
+Tiang 9 Meter                   fo_tiang_9_meter
+Accessories                     fo_accessories
+
+installasi
+ODP                             fo_odp
+Jenis Kabel                     fo_jenis_kabel
+Jarak Kabel                     fo_jarak_kabel
+Type ONT/ONU                    fo_type_ont_onu
+Serial Number ONT/ONU           fo_sn_ont_onu
+Mac Address ONT/ONU             fo_mac_ont_onu
+Power Optic ODP                 fo_power_optic_odp
+Power Optic Roset               fo_power_optik_roset
+IP PTP Privat                   fo_ip_ptp_privat
+
+
+wireless
+survey
+BTS Utama                       wr_bts_utama
+Jarak                           wr_jarak_bts_utama
+BTS Alternatif                  wr_bts_alternatif
+Jarak                           wr_jarak_bts_alternatif
+Jenis Tower / Pole              wr_jenis_tower_pole
+Tinggi Tower / Pole             wr_tinggi_tower_pole
+Kabel                           wr_Kabel
+Access Point                    wr_access_point
+Tangga                          wr_tangga
+
+installasi
+-------------------------------------------------
+BTS                             wr_bts
+Jarak                           wr_jarak
+Signal Streght                  wr_signal_streght
+Kualitas Signal / CCQ           wr_kualitas_signal_ccq
+Antena                          wr_antena
+Radio                           wr_radio
+Jenis Kabel                     wr_jenis_kabel
+Jarak Kabel                     wr_jarak_kabel
+Power Optic ODP                 wr_power_optic_odp
+Power Optic Roset               wr_power_optic_roset
+Speedtest                       wr_speedtest
+Topologi                        wr_topologi
+ODP                             wr_odp
+Modem FO + Adaptor              wr_modem_fo_adaptor
+Router                          wr_router
+Jalur Kabel                     wr_jalur_kabel
+Test Link Wireless              wr_test_link_wireless

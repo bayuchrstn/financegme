@@ -1,0 +1,5 @@
+*{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size:12px;}
+.tabel_report{border-collapse:collapse; border:0;}
+.tabel_report th{text-transform:uppercase;}
+.tabel_report th, .tabel_report td{border:1px solid #444444; padding:3px 5px; white-space:nowrap;}
+.tabel_report td{vertical-align:text-top;}

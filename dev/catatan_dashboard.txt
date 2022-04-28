@@ -1,0 +1,6 @@
+kotak / blok konten di di halaman dashboard di sebut dengan "widget"
+
+cara menambah widget adalah sebagai berikut
+1. input widget pada table gmd_modul dengan "up"=dashboard
+2. input table gmd_widget_config (ini sebagai pengatunran / properties dari widget misal bentuk, lebar, padding, auto load dan lain lain)
+3. pastikan "content_url" pada gmd_widget_config

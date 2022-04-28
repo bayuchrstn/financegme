@@ -1,0 +1,46 @@
+--- Catatan Update Database ---
+
+26 Sep 2017
+- create table cuti, cuti history, cuti status, cuti category
+
+5 Okt 2017
+- Update table cuti (add area)
+- add modul cuti_karyawan
+- add form cuti on gmd_form
+
+9 Okt 2017
+- add modul cuti_acc_manager & cuti_acc_hr
+- add table gmd_maps & gmd_maps_type (with data)
+- add data maps on gmd_setting & gmd_setting_category
+
+10 Okt2017
+- add form maps on gmd_form
+
+12 Okt 2017
+- add data master category maps_center
+
+13 Okt 2017
+- add data modul code maps
+- update url modul code cuti
+
+16 Okt 2017
+- add table overtime
+- update link modul lembur
+
+17 Okt 2017
+- UPDATE `newappsg_dev`.`gmd_maps_type` SET `maps_type_icon` = 'http://maps.google.com/mapfiles/ms/icons/green.png' WHERE `maps_type_id` = '3'; 
+- 
+#ipam_id  ipam_up  ipam_maps_id  ipam_ip  ipam_subnet  ipam_ip_status  ipam_ip_type 
+
+--- Widget ultah ---
+INSERT INTO `gmd_modul` (`id`, `up`, `categories`, `name`, `code`, `url`, `menu_order`, `note`, `icon`, `menu`, `flag_menu`, `su_only`, `modul_view`) VALUES (NULL, 'dashboard', 'Ulang Tahun', 'Ulang Tahun', 'dashboard_ultah_karyawan', '#', '0', NULL, 'icon-calendar52', NULL, 'no', '0', NULL); 
+INSERT INTO `gmd_widget_config` (`id`, `widget_code`, `column_width`, `sort`, `auto_refresh`, `padding`, `content_url`, `component`, `tabs`, `max_tab`, `selected_tab`) VALUES (NULL, 'dashboard_ultah_karyawan', 'col-lg-6', '2', '0', 'yes', 'karyawan/widget_ulang_tahun/', 'panel_pill', 'YTozOntpOjA7YTozOntzOjU6ImxhYmVsIjtzOjEwOiJSZWdpb25hbCAxIjtzOjI6ImlkIjtzOjEwOiJ1bHRhaF9yZWcxIjtzOjc6ImNvbnRlbnQiO3M6MDoiIjt9aToxO2E6Mzp7czo1OiJsYWJlbCI7czoxMDoiUmVnaW9uYWwgMiI7czoyOiJpZCI7czoxMDoidWx0YWhfcmVnMiI7czo3OiJjb250ZW50IjtzOjA6IiI7fWk6MjthOjM6e3M6NToibGFiZWwiO3M6MTA6IlJlZ2lvbmFsIDMiO3M6MjoiaWQiO3M6MTA6InVsdGFoX3JlZzMiO3M6NzoiY29udGVudCI7czowOiIiO319', '3', 'ultah_reg1'); 
+
+08 Feb 2018
+
+- INSERT INTO `gmd_modul` (`id`, `up`, `categories`, `name`, `code`, `url`, `menu_order`, `note`, `icon`, `menu`, `flag_menu`, `su_only`, `modul_view`) VALUES('179','finance','master','Master','Master','#','10',NULL,NULL,NULL,'yes',NULL,NULL);
+- INSERT INTO `gmd_modul` (`id`, `up`, `categories`, `name`, `code`, `url`, `menu_order`, `note`, `icon`, `menu`, `flag_menu`, `su_only`, `modul_view`) VALUES('180','Master','bank','Bank','bank','bank','1',NULL,NULL,NULL,'yes',NULL,NULL);
+
+28 Feb 2018
+- INSERT INTO `erpgmedia_erp`.`gmd_setting_category` (`Name`, `code`, `sort`) VALUES ('Dropbox', 'dropbox', '5');
+- INSERT INTO `erpgmedia_erp`.`gmd_setting` (`label`, `setting`, `value`, `form`, `category`, `label_category`, `sort`) VALUES ('Dropbox Token', 'dropbox_token', 'your_token', 'text', 'dropbox', 'Dropbox', '3');

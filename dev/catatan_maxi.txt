@@ -1,0 +1,1 @@
+update gmd_customer set is_maxy='1' WHERE product_category in ('broadband', 'maxi', 'maxi_value', 'gforce');

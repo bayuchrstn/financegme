@@ -1,0 +1,1 @@
+ini info default pelanggan.

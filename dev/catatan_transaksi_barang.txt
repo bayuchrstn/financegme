@@ -1,0 +1,102 @@
+gmd_item_detail
+----------------------
+	available
+	approved_out
+	install
+	request_in
+	approved_in --------- perlu gak?
+	damage
+	garansi
+
+gmd_item_transaction
+	install
+	return
+	damage
+	request_in
+
+gmd_task_item_out
+    request_out
+	return ---> jika batal dipasang
+
+gmd_task_item_in
+    request_in
+    diterima
+
+
+
+
+-------------------------
+select distinct(item_status) from gmd_item_detail
+select distinct(status) from gmd_item_transaction
+-------------------------
+
+
+BArang keluar (installasi ) barang dari gudang di pasang ke luar misal pelanggan bts dll
+Table   -> task_item_out
+exe     -> ajax/save_item_out
+
+
+request BArang masuk (dismantle ) barang dari luar misal BTS,pelanggan masuk ke gudag
+TS -> gudang
+Table   -> task_item_in
+exe     -> task_item
+modal_request_in function save_item_in($task_id)
+
+approval barang masuk
+Gudang -> ts
+http://localhost/apps/ajax_request/penerimaan_barang_masuk/6
+http://localhost/apps/ajax/save_barang_masuk
+
+
+
+gudang
+-----------------------
+select box barang terpasang (modul approval dismantle) ->http://localhost/apps/ajax_request/penerimaan_barang_masuk/11
+request/barang_masuk/penerimaan_barang_masuk.php
+
+alur pengembalian barang
+
+barang dipasang (install) -> ts request kembali (request_in) -> [table_item_transaction (return) + table item_detail (available / damage)] -> input di table return item (baik/rusak/garansi)
+
+
+
+selectbox barang available di gudang yg akan diberikan ke TS
+http://localhost/apps/ajax/item_detail_select_picker/8
+
+
+
+
+INSERT INTO `gmd_setting` (`label`, `setting`, `value`, `form`, `category`, `label_category`, `sort`) VALUES
+('SMTP Host',	'smtp_host',	'smtp.zoho.com',	'text',	'smtp',	'SMTP',	3),
+('SMTP User',	'smtp_user',	'apps@codenolimit.com',	'text',	'smtp',	'SMTP',	4),
+('SMTP Password',	'smtp_pass',	'1234567890',	'text',	'smtp',	'SMTP',	5),
+('SMTP Useragent',	'smtp_useragent',	'ZOHO',	'text',	'smtp',	'SMTP',	13),
+('SMTP protocol',	'smtp_protocol',	'smtp',	'text',	'smtp',	'SMTP',	14),
+('SMTP mailpath',	'smtp_mailpath',	'/usr/sbin/sendmail',	'text',	'smtp',	'SMTP',	12),
+('SMTP port',	'smtp_port',	'465',	'text',	'smtp',	'SMTP',	8),
+('SMTP keepalive',	'smtp_keepalive',	'FALSE',	'text',	'smtp',	'SMTP',	15),
+('SMTP Crypto',	'smtp_crypto',	'ssl',	'text',	'smtp',	'SMTP',	7),
+('SMTP wordwrap',	'smtp_wordwrap',	'TRUE',	'text',	'smtp',	'SMTP',	11),
+('SMTP mailtype',	'smtp_mailtype',	'html',	'text',	'smtp',	'SMTP',	9),
+('SMTP charset',	'smtp_charset',	'iso-8859-1',	'text',	'smtp',	'SMTP',	10),
+('SMTP Account Name',	'smtp_from_name',	'apps',	'text',	'smtp',	'SMTP',	2),
+('SMTP From Email',	'smtp_from_email',	'apps@codenolimit.com',	'text',	'smtp',	'SMTP',	1),
+('SMTP Reply To',	'smtp_reply_to',	'apps@codenolimit.com',	'text',	'smtp',	'SMTP',	6);
+
+
+INSERT INTO `gmd_setting` (`label`, `setting`, `value`, `form`, `category`, `label_category`, `sort`) VALUES
+('SMTP Host',	'smtp_host',	'vthunder.gmedia.net.id',	'text',	'smtp',	'SMTP',	3),
+('SMTP User',	'smtp_user',	'apps@newapps.gmedia.id',	'text',	'smtp',	'SMTP',	4),
+('SMTP Password',	'smtp_pass',	'pL,okm,./',	'text',	'smtp',	'SMTP',	5),
+('SMTP Useragent',	'smtp_useragent',	'gmedia',	'text',	'smtp',	'SMTP',	13),
+('SMTP protocol',	'smtp_protocol',	'smtp',	'text',	'smtp',	'SMTP',	14),
+('SMTP mailpath',	'smtp_mailpath',	'/usr/sbin/sendmail',	'text',	'smtp',	'SMTP',	12),
+('SMTP port',	'smtp_port',	'465',	'text',	'smtp',	'SMTP',	8),
+('SMTP keepalive',	'smtp_keepalive',	'FALSE',	'text',	'smtp',	'SMTP',	15),
+('SMTP Crypto',	'smtp_crypto',	'ssl',	'text',	'smtp',	'SMTP',	7),
+('SMTP wordwrap',	'smtp_wordwrap',	'TRUE',	'text',	'smtp',	'SMTP',	11),
+('SMTP mailtype',	'smtp_mailtype',	'html',	'text',	'smtp',	'SMTP',	9),
+('SMTP charset',	'smtp_charset',	'iso-8859-1',	'text',	'smtp',	'SMTP',	10),
+('SMTP Account Name',	'smtp_from_name',	'apps',	'text',	'smtp',	'SMTP',	2),
+('SMTP From Email',	'smtp_from_email',	'apps@newapps.gmedia.id',	'text',	'smtp',	'SMTP',	1),
+('SMTP Reply To',	'smtp_reply_to',	'apps@newapps.gmedia.id',	'text',	'smtp',	'SMTP',	6);

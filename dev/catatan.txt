@@ -1,0 +1,156 @@
+catatan progrees
+// init progress started tag
+// progress update tag
+
+// init progress ->
+// update progress ->
+
+// membuat alert ->
+// membuat alert ->
+
+
+BOQ
+	ts input barang
+	sales request
+	gudang moderasi detail
+
+		manajer marketing
+		manjer faa
+		budiayanto direktur
+		pak agus komisaris
+
+		harus semua bisa skip
+
+    revisi
+	hold
+	denied
+
+	status boq
+		request
+		request_moderation
+		warehouse_moderation
+		request_approval
+		approved
+--------------
+PO
+
+berdasar request pekerjaan
+berdasar request manajer
+berdasar request stok
+
+
+----------------
+
+
+legal
+upload dokumen pelanggan customer, bts, upstream
+
+GA
+	1. urusan rumah Tangga
+	2. alat kantor
+	3, dapur
+	5
+
+Purcasing
+
+
+
+IPAM ip address Management
+-----------------------------
+
+ip pelanggan
+mrtg_id
+perangkat
+
+ip calculator
+
+
+
+
+
+
+
+
+
+
+status marketing Approval
+	request
+	approved
+	reject
+
+jenis pekerjaaan marketing request
+	survey --> ini diinput dari marketing progress
+	installasi --> ini diinput dari marketing progress
+	general
+
+jenis pekerjaaan
+	survey
+	installasi
+	installasi_new (untuk pembeda format laporan)
+	dismantle
+	replace
+	general
+
+status pekerjaan
+	progress
+	selesai
+	belum_selesai
+
+
+master status detail/item Barang
+	available
+	request_out
+	approved_out
+	install
+	request_in
+	approved_in
+	damage
+	garansi
+
+
+*NEW
+master status detail/item Barang
+	available
+	approved_out
+	install
+	request_in
+	approved_in
+	damage
+	garansi
+
+
+mengatur menu di controller init
+
+
+
+--------------------------------------------------------------------
+marketing request
+code = mrk
+status =
+	belum_dikirim (masih di admin sales)
+	sudah_dikirim (sudah di TS tapi blm di jadwalkan)
+	sudah_dijadwalkan
+
+pembeda form di admin sales
+	-> general -> request yg dibuat marketing di modul "marketing request"
+	-> survey / install -> request yg dibuat marketing di modul "marketing progress"
+
+
+status barang Keluar
+	request
+	approved
+
+status barang masuk (table gmd_task_item_in)
+	request_in
+	diterima
+
+
+
+divisi CE
+
+Customer service			-> Rizka
+tugasnya customer care call
+
+
+Customer Relationship		-> Bayu Saputro, Linda
+Ini kegiatan harian yang di lakukan Customer Relationship (CR)
